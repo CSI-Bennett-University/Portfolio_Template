@@ -1,9 +1,13 @@
 :root {
-  --primary: #8a63ff; /* This is the primary color. */
-  --secondary: #A591FF; /* This is the secondary color. */
-  --bg: #1F1D36; /* This is the background color. */
-  --heading: #E0DEF4; /* This is the color for headings. */
-  --text: #D5D4F0; /* This is the color for text. */
+  --primary: rgb(0, 0, 0); /* This is the primary color. */
+  --secondary: #088474; /* This is the secondary color. */
+  --bg: #71c39c; /* This is the background color. */
+  --heading: #000000; /* This is the color for headings. */
+  --text: #000000; /* This is the color for text. */
+}
+
+*{
+  font-family: Poppins;
 }
 
 body {
@@ -18,7 +22,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 5.5rem; /* This sets the font size for h1 headings. */
+  font-size: 5rem; /* This sets the font size for h1 headings. */
   margin-bottom: 20px; /* This sets the margin for h1 headings. */
 }
 
@@ -45,9 +49,13 @@ img {
 }
 
 .logo_csi {
-  max-width: 200px; /* This sets the maximum width for the CSI logo. */
-  border-radius: 100px; /* This adds rounded corners to the CSI logo. */
+  object-fit: cover;
+  object-position: center;
+  width: 350px;
+  height:350px; /* This sets the maximum width for the CSI logo. */
+  border-radius: 175px; /* This adds rounded corners to the CSI logo. */
   outline: none; /* This removes the outline from the CSI logo. */
+  margin-bottom: 23px;
 }
 /* Header */
 
@@ -70,11 +78,12 @@ nav a {
   text-decoration: none;
   color: var(--text);
   font-size: 250%;
+  transition: background 0.3s;
 }
 
 nav a:hover {
   /* When the nav links are hovered over, they will change to a background color of var(--primary). */
-  background: var(--primary);
+  background: var(--secondary);
 }
 
 /* Sections */
@@ -162,6 +171,7 @@ section {
   /* The list items in the education section will have a line-height of 1.8 and will be displayed full-width. */
   line-height: 1.8;
   max-width: 100%;
+  font-size: 32px;
 }
 
 /* This media query defines the style for the education section when the screen width is less than 600px. */
@@ -211,11 +221,12 @@ section {
   width: 300px;
   vertical-align: top;
   margin-right: 20px;
-  background-color: #38355c;
+  background-color: #088474;
   border-radius: 10px;
 
   /* The project will have padding of 20px between the content. */
   padding: 20px;
+  margin-bottom: 16px;
 }
 
 /* Remove margin from last project */
@@ -230,12 +241,14 @@ section {
 .project h3 {
   /* The h3 headings for each project will have a margin-top of 10px and a font size of 1.3rem. */
   margin-top: 10px;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  text-align: center;
+  
 }
 
 .project p {
   /* The paragraphs for each project will have a color of #8c87a2. */
-  color: #8c87a2;
+  color: #000000;
 }
 
 /* This code defines the style for the contact section. */
@@ -246,6 +259,7 @@ section {
   /* The paragraphs in the contact section will have a margin of 10px 0 and a font size of 1.4rem. */
   margin: 10px 0;
   font-size: 1.4rem;
+  font-weight: 500;
 }
 
 #contact a {
@@ -258,6 +272,7 @@ section {
   /* The icons in the contact section will have a color of var(--secondary) and will have a margin-right of 10px. */
   color: var(--secondary);
   margin-right: 10px;
+  
 }
 
 /* Media Queries */
@@ -276,4 +291,87 @@ section {
   }
 
 }
+
+/* code from stackoverflow, coloring by myself and border radius and all*/
+
+::-webkit-scrollbar {
+  width: 4px;
+  height:8px;
+  border: none;
+}
+
+::-webkit-scrollbar-track {
+  border:none;
+  background:   #0db8a2;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
   
+  border-radius: 12px;
+  background: #088474;
+}
+  
+/* making the comments under the projects good */
+
+.linker{
+  background-color:#0db8a2 ;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 17px;
+  margin-top: 20px;
+  transition: background-color 0.15s;
+}
+.linker:hover{
+  background-color: white;
+}
+
+.input{
+  display: block;
+  margin-bottom: 18px;
+  height: 38px;
+  font-size: 32px;
+  border: none;
+  border-radius: 23px;
+  padding:8px ;
+  padding-left: 12px;
+  background-color: #a2e2c4;
+  color: white;
+}
+.contact-form{
+  margin-bottom: 25px;
+  background-color: #088474;
+  padding: 38px;
+  border-radius: 40px;
+  margin-bottom: 128px;
+}
+textarea{
+  height: 200px;
+  width: 200px;
+  min-height: 200px;
+  min-width: 390px;
+  max-height: 200px;
+  max-width: 390px;
+  cursor: default;
+}
+.submit{
+  border:none;
+  height: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 32px;
+  border-radius: 40px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left:25%;
+  cursor: pointer;
+  transition: background-color 0.15s,color 0.15s;
+}
+.submit:hover{
+  background-color: #71c39c;
+  color: white;
+}
