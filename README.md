@@ -1,6 +1,6 @@
 # Portfolio_Template
 
-Portfolio Website template for portfolio building workshop
+Portfolio Website template for portfolio building workshop.
 
 
 ## HTML CSS Resources
