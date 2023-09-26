@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(1, 0, 25);
+  color: white;
+  font-family: "Comic Neue", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  background-color: rgb(12, 0, 35);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 1.438rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(173, 173, 220);
+  font-size: 1.1rem;
+}
+
+.left {
+  font-size: 2rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0;
+  align-items: center;
+  padding: 3.75rem 1.25rem;
+}
+
+.firstSection>div {
+  width: 30%;
+}
+
+.rightSection img {
+  width: 80%;
+}
+
+.leftSection {
+  font-size: 3rem;
+}
+
+#element {
+  color: rgb(224, 180, 232);
+}
+
+img {
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  border: 0.156rem solid white;
+}
+
+.myname {
+  color: rgb(238, 143, 255);
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+
+.secondSection h1 {
+  font-size: 1.9rem;
+  height: 4.688rem;
+}
+
+.text-grey {
+  color: rgb(171, 171, 171);
+}
+
+.secondSection .box {
+  background: white;
+  width: 80vw;
+  height: 0.25rem;
+  margin: 3.5rem 0;
+  display: flex;
+}
+
+.secondSection .vertical {
+  height: 5.813rem;
+  width: 0.125rem;
+  background-color: white;
+  margin: 0 6.25rem;
+}
+
+.image-top {
+  width: 3.125rem;
+  height: 3.125rem;
+  position: relative;
+  top: -3.75rem;
+  left: -1.563rem;
+}
+
+.vertical-title {
+  position: relative;
+  top: 4.688rem;
+  width: 13.125rem;
+
+  font-size: 0.875rem;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 5.375rem;
+  color: gray;
+  width: 13.125rem;
+  font-size: 0.563rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading);
+}
+
+h1 {
+  font-size: 5.5rem;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-size: 4rem;
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.75 rem 1.25rem;
+}
+
+.hello {
+  margin-bottom: 3.125rem;
+}
+
+#about p {
+  /* The about page paragraph will have a max-width of 800px, a margin of 1.25rem 0, a font size of 1.7rem, and will be text-aligned to the center. */
+  max-width: 50rem;
+  margin: 1.25rem 0;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+#about ul {
+  /* The about page unordered list will be displayed in a flex container with justify-content of center, no list-style, and no padding. This means that the list items will be displayed one after the other, and there will be no bullets or spaces between them. */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+#about li {
+  /* The about page list items will have a margin of 0 0.625rem. This means that there will be no margin to the left and right of the list items, but there will be a margin of 0.625rem to the bottom. */
+  margin: 0 0.625rem;
+}
+
+/* Skills */
+
+.skill-icons {
+  /* The skill icons will have a font size of clamp(2rem, 5vw, 5rem), a margin of 1.875rem 0, and a color of var(--primary). */
+  font-size: clamp(2rem, 5vw, 5rem);
+  margin: 1.875rem 0;
+  color: var(--primary);
+}
+
+/* This code defines the style for the education section. */
+
+#education {
+  /* The education section will have a max-width of 100% and will be centered on the page. */
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10rem;
+
+  /* The margin attribute has been commented out because it is not necessary. */
+  /* margin: 0 auto; */
+}
+
+#education h2 {
+  /* The h2 headings in the education section will have a margin-bottom of 1.875rem and will be displayed full-width. */
+  margin-bottom: 1.875rem;
+  max-width: 100%;
+}
+
+#education h3 {
+  /* The h3 headings in the education section will have a margin-bottom of 0.625rem and will be displayed full-width. */
+  margin-bottom: 0.625rem;
+  max-width: 100%;
+}
+
+#education p {
+  /* The paragraphs in the education section will have a line-height of 1.6, will be displayed full-width, and will have a font size of 180%. */
+  line-height: 1.6;
+  max-width: 100%;
+  font-size: 180%;
+}
+
+#education ul {
+  /* The unordered lists in the education section will have no list-style and will be displayed full-width. */
+  list-style: none;
+  max-width: 100%;
+
+  /* The padding-left attribute has been commented out because it is not necessary. */
+  /* padding-left: 0; */
+}
+
+#education li {
+  /* The list items in the education section will have a line-height of 1.8 and will be displayed full-width. */
+  line-height: 1.8;
+  max-width: 100%;
+}
+
+/* This media query defines the style for the education section when the screen width is less than 37.5rem. */
+
+@media (max-width: 37.5rem) {
+
+  /* The education section will have padding of 1.25rem. */
+  #education {
+    padding: 1.25rem;
+  }
+
+  /* The h2 headings in the education section will have a font size of 28px. */
+  #education h2 {
+    font-size: 1.75rem;
+  }
+
+  /* The h3 headings in the education section will have a font size of 1.25rem. */
+  #education h3 {
+    font-size: 1.25rem;
+  }
+
+}
+
+/* This code defines the style for the projects section. */
+
+/* Projects Container */
+
+.projects {
+  /* The projects container will have overflow-x: auto, overflow-y: hidden, and white-space: nowrap. This will allow the projects to scroll horizontally if they are too wide to fit on the screen. */
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 10rem;
+
+  /* The projects container will be centered on the page and will have a max-width of 1000px. */
+  margin: 0 auto;
+  max-width: 62.5rem;
+
+  /* The projects container will have padding of 1.25rem. */
+  padding: 1.25rem;
+}
+
+/* Individual Projects */
+
+.project {
+  /* Each project will be displayed as an inline-block element with a width of 300px and a vertical alignment of top. It will also have a margin-right of 1.25rem, a background color of #38355c, and rounded borders with a radius of 0.625rem. */
+  display: inline-block;
+  width: 18.75rem;
+  vertical-align: top;
+  margin-right: 1.25rem;
+  background-color: #38355c;
+  border-radius: 0.625rem;
+
+  /* The project will have padding of 1.25rem between the content. */
+  padding: 1.25rem;
+}
+
+/* Remove margin from last project */
+
+.project:last-child {
+  /* The last project will not have a margin-right of 1.25rem. */
+  margin-right: 0;
+}
+
+/* Project Content Styling */
+
+.project h3 {
+  /* The h3 headings for each project will have a margin-top of 0.625rem and a font size of 1.3rem. */
+  margin-top: 0.625rem;
+  font-size: 1.3rem;
+}
+
+.project p {
+  /* The paragraphs for each project will have a color of #8c87a2. */
+  color: #8c87a2;
+}
+
+/* This code defines the style for the contact section. */
+
+/* Contact */
+
+#contact h2{
+  margin-top: 10rem;
+
+}
+#contact p {
+  /* The paragraphs in the contact section will have a margin of 0.625rem 0 and a font size of 1.4rem. */
+  margin: 0.625rem 0;
+  font-size: 1.4rem;
+}
+
+#contact a {
+  /* The links in the contact section will be aligned to the center and will have text-align: center. */
+  align-items: center;
+  text-align: center;
+}
+
+#contact i {
+  /* The icons in the contact section will have a color of var(--secondary) and will have a margin-right of 0.625rem. */
+  color: var(--secondary);
+  margin-right: 0.625rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 37.5rem) {
+
+  /* The header will change to a flex direction of column when the screen width is less than 37.5rem. */
+  header {
+    flex-direction: column;
+  }
+
+  /* The about image will change to a width of 180px and will be aligned to the center when the screen width is less than 37.5rem. */
+  #about img {
+    width: 11.25rem;
+    align-self: center;
+  }
+
+  section {
+    padding: 3.75 rem 1.25rem;
+    /* This sets the padding for sections. */
+  }
